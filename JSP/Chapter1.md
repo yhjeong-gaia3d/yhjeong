@@ -17,13 +17,13 @@
 
 그것이 무엇이든 간에, 작동 원리는 _"클라이언트는 요청하고 서버는 이를 제공한다"_로 요약할 수 있습니다.
 
-[##_Image|kage@ecksy6/btqBM8gCmz5/J9cnA9UZYGLpPPE5aIKu8K/img.png|alignCenter|data-origin-width="594" data-origin-height="342" data-filename="blob"|||_##]
+![웹 서버는 어떤 일을 하나요?](./images/chapter1/1.png)
 
 ### 그럼 클라이언트는 무엇을 하나?
 
 웹 클라이언트는 사용자가 서버에 요청을 보낼 수 있는 기능을 제공합니다. 요청을 보내고 난 다음, 서버가 보내온 요청의 결과를 화면에 출력하는 일도 클라이언트의 역할이죠. 브라우저는 서버랑 통신하는 크롬, 모질라, 사파리와 같은 소프트웨어를 말합니다. 브라우저의 주된 역할은 HTML 코드를 읽어서 화면에 보이는 것이죠. 클라이언트를 사람과 브라우저롤 구분하지 않고 총칭해서 _사용자가 요구한 대로 동작하는 웹 브라우저_라는 뜻으로 이해하면 무리가 없습니다.
 
-[##_Image|kage@xXyno/btqBJevRzUc/HXUBn59HehjCSmKXZIj3X0/img.png|alignCenter|data-filename="클라이언트.png" data-origin-width="541" data-origin-height="294"|||_##]
+![그럼 클라이언트는 무엇을 하나?](./images/chapter1/2.png)
 
 ### 클라이언트와 서버는 HTML과 HTTP를 어떻게 다룰지 압니다
 
@@ -59,19 +59,19 @@ GET도 정보를 보낼 수 있다고요~ 이거 제대로 설명하고 있는�
 2.  GET의 데이터 전송방식은 브라우저 주소란에 기입하는 URL 뒤에 붙이는 식입니다. 그러므로 중요한 데이터든 아니든 간에 화면에 다 보입니다. 그러니 패스워드처럼 민감한 데이터는 GET으로 보내지 않는 것이 현명하겠죠.
 3.  위의 두 가지 이유로 해서 GET으로 전송하는 URL은 즐겨찾기에 등록할 수 있지만, POST는 대부분 그렇지 못합니다. 브라우저에 따라 폼의 Submit 결과를 즐겨찾기에 등록할 수도, 못할 수도 있습니다.
 
-[##_Image|kage@m7Fym/btqBMMLIYLM/RFXLmBuDD0Ruh9npCObwxK/img.png|alignCenter|data-filename="blob" data-origin-width="1850" data-origin-height="618"|||_##]
+![HTTP GET, POST 요청 및 HTTP 응답을 해부해보자](./images/chapter1/3.png)
 
-####  GET을 해부해봅시다 .         
+####  GET을 해부해봅시다           
 
-[##_Image|kage@C8ESK/btqBJ6EtZyy/E9jrI5QWZPHJYJRquGWTl1/img.png|alignCenter|data-filename="스크린샷 2020-02-05 오후 5.51.29.png" data-origin-width="1760" data-origin-height="784"|||_##]
+![GET을 해부해봅시다.](./images/chapter1/4.png)
 
 ####  POST도 해부해봅시다          
 
-[##_Image|kage@LyETN/btqBLHddH2w/j5bKBQ2c0G55MZhRVkCO1k/img.png|alignCenter|data-filename="스크린샷 2020-02-05 오후 10.34.09.png" data-origin-width="1738" data-origin-height="972"|||_##]
+![POST도 해부해봅시다.](./images/chapter1/5.png)
 
 ####  HTTP 응답을 해부해봅시다          
 
-[##_Image|kage@HBYdZ/btqBLHEjWJ9/isl8Fs4wR864vavWy3m6Ek/img.png|alignCenter|data-filename="스크린샷 2020-02-05 오후 5.58.09.png" data-origin-width="1760" data-origin-height="964"|||_##]
+![HTTP 응답을 해부해봅시다](./images/chapter1/6.png)
 
 #### 한번에 다 보도록 하지요
 
@@ -101,11 +101,11 @@ GET도 정보를 보낼 수 있다고요~ 이거 제대로 설명하고 있는�
 
 웹 서버는 단지 정적인 페이지만 제공할 뿐입니다. 그러나 도우미 어플리케이션이 웹 서버와 협력해서 동적인, 실시간으로 작성한 페이지를 제공할 수 있습니다. 서버 상에 데이터를 저장할 때에도 웹 서버는 자신을 도와줄 어플리케이션에게 SOS 요청을 합니다. 웹 서버는 파라미터를 어플리케이션에 넘겨주고, 응답하도록 부탁합니다. 이런 도우미 어플리케이션을 CGI 프로그램이라고 부릅니다. 서블릿과 CGI 둘다 도우미 어플리케이션 입니다.
 
-[##_Image|kage@DGye2/btqBIJiSEfe/SOFpkOAzz8a5CFnzBpWeD0/img.png|alignCenter|data-filename="스크린샷 2020-02-05 오후 11.23.27.png" data-origin-width="1864" data-origin-height="738"|||_##]
+![서버, 정적인 웹 페이지 그리고 CGI](./images/chapter1/7.png)
 
 ---
 
-[##_Image|kage@zRGml/btqBNkBn6rf/1LKosScrOsjUZGKoiJxU0K/img.png|alignCenter|data-filename="스크린샷 2020-02-05 오후 11.24.01.png" data-origin-width="1838" data-origin-height="740"|||_##]
+![서버, 정적인 웹 페이지 그리고 CGI](./images/chapter1/8.png)
 
 ### 서블릿의 신비를 벗겨보자 : 작성, 배포, 실행
 
@@ -143,7 +143,7 @@ public class Ch1Servlet extends HttpServlet {
 **%bin/startup.sh**  
 **%bin/shutdown.sh**
 
-[##_Image|kage@bfqB4m/btqBNknS4Gy/rhdkIDdw2Mi0nKEPkvjAL1/img.png|alignCenter|data-filename="스크린샷 2020-02-05 오후 11.42.13.png" data-origin-width="1066" data-origin-height="614" width="500"|||_##]
+![서블릿의 신비를 벗겨보자 : 작성, 배포, 실행](./images/chapter1/9.png)
 
 ### JSP는 'HTML에 자바를 넣을 순 없을까'라는 고민에서 탄생했다네요.
 
