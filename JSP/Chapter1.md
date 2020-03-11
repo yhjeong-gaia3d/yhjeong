@@ -139,9 +139,11 @@ public class Ch1Servlet extends HttpServlet {
 </web-app>
 ```
 
-**%javac -classpath /your path/tomcat/common/lib/servlet-api.jar -d classes src/Ch1Servlet.java**  
-**%bin/startup.sh**  
-**%bin/shutdown.sh**
+```
+%javac -classpath /your path/tomcat/common/lib/servlet-api.jar -d classes src/Ch1Servlet.java
+%bin/startup.sh
+%bin/shutdown.sh
+```
 
 ![서블릿의 신비를 벗겨보자 : 작성, 배포, 실행](./images/chapter1/9.png)
 
